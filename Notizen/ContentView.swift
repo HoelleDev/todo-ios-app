@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-struct ToDo: Identifiable {
-    let id = UUID()
-    let text : String
-    let date : Date
-    var isCompleted: Bool
-}
+
 
 struct ContentView: View {
     @State var showNewItem = false
