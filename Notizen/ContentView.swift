@@ -7,15 +7,12 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     @State var showNewItem = false
     @State var todoList = [
         ToDo(text: "Learn SwiftUI", date: .now, isCompleted: false),
         ToDo(text: "Learn SwiftData", date: .now, isCompleted: true),
         ToDo(text: "Learn iOS Development", date: .now, isCompleted: false)
-        
     ]
     
     private func sortItems() {
