@@ -49,6 +49,7 @@ struct ContentView: View {
                         }
                         else {
                             Text(todo.text)
+                                .bold()
                                 .font(.subheadline)
                         }
                         
