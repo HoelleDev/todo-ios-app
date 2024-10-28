@@ -20,12 +20,8 @@ struct ToDoListView: View {
     @State private var selectedToDo: ToDo?
     
     // Abfrage aller ToDos aus der DB
-    // Sortierung nach Datum
-    //@Query(sort: \ToDo.date, order: .reverse) private var toDos: [ToDo]
-    @Query(sort: [
-        SortDescriptor(\ToDo.deadline, order: .forward),
-        SortDescriptor(\ToDo.isCompletedValue)
-    ]) var toDos: [ToDo]
+    // Sortierung nach Deadline
+    @Query(sort: \ToDo.deadline, order: .forward) private var toDos: [ToDo]
     
     private func add() {
         showSheet = true
@@ -104,10 +100,10 @@ struct ToDoListView: View {
                 }
             }
             .sheet(isPresented: $showSheet, content: {
-                ToDoDeatilView(toDo: nil)
+                ToDoDetailView(toDo: nil)
             })
             .sheet(item: $selectedToDo) { toDo in
-                ToDoDeatilView(toDo: toDo)
+                ToDoDetailView(toDo: toDo)
             }
         }
     }

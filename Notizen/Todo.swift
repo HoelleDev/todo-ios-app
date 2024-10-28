@@ -13,11 +13,7 @@ class ToDo: Identifiable {
     var id: UUID
     var title: String
     var date: Date
-    var isCompleted: Bool {
-        didSet {
-            isCompletedValue = isCompleted ? 1 : 0
-        }
-    }
+    var isCompleted: Bool
     var isCompletedValue: Int
     var deadline: Date
     var priority: String
@@ -28,7 +24,6 @@ class ToDo: Identifiable {
         self.title = title
         self.date = .now
         self.isCompleted = false
-        self.isCompletedValue = 0
         self.deadline = deadline
         self.priority = priority
         self.taskDescription = taskDescription

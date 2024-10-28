@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ToDoDeatilView : View {
+struct ToDoDetailView : View {
     
     enum Mode {
         case add, edit
@@ -114,5 +114,5 @@ struct ToDoDeatilView : View {
     }
 }
 #Preview {
-    ToDoDeatilView(toDo: nil)
+    ToDoDetailView(toDo: nil)
 }
