@@ -14,7 +14,6 @@ class ToDo: Identifiable {
     var title: String
     var date: Date
     var isCompleted: Bool
-    var isCompletedValue: Int
     var deadline: Date
     var priority: String
     var taskDescription: String?
