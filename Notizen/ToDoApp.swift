@@ -1,10 +1,3 @@
-//
-//  NotizenApp.swift
-//  Notizen
-//
-//  Created by Hoeltgebaum, Daniel (SE-A/32) on 30.09.24.
-//
-
 import SwiftUI
 import SwiftData
 

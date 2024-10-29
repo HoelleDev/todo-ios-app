@@ -1,10 +1,3 @@
-//
-//  newItemView.swift
-//  Notizen
-//
-//  Created by Hoeltgebaum, Daniel (SE-A/32) on 17.10.24.
-//
-
 import SwiftUI
 
 struct ToDoDetailView : View {

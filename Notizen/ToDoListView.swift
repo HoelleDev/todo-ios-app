@@ -1,15 +1,3 @@
-//
-//  ContentView.swift
-//  Notizen
-//
-//  Created by Hoeltgebaum, Daniel (SE-A/32) on 30.09.24.
-//
-
-/*
- TODOS:
- Sortieren nach Datum und Completed
- */
-
 import SwiftUI
 import SwiftData
 

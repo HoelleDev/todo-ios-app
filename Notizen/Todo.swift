@@ -1,10 +1,3 @@
-//
-//  Todo.swift
-//  Notizen
-//
-//  Created by Hoeltgebaum, Daniel (SE-A/32) on 22.10.24.
-//
-
 import Foundation
 import SwiftData
 
